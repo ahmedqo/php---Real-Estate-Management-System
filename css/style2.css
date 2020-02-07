@@ -1,0 +1,380 @@
+*,body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background: #eee;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(237, 237, 237); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(179, 179, 179); 
+}
+a{
+    all:unset;
+    cursor: pointer;
+}
+.nav{
+    background:#333;
+}
+.nav .content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 40px;
+}
+.nav .content a{
+    text-decoration:none;
+    color:white;
+    display: block;
+    font-size: 35px;
+}
+.menu{
+    position: absolute;
+    overflow: hidden;
+    width: 44px;
+    height: 40px;
+}
+.menu:hover{
+    opacity:1;
+}
+.menu a{
+    all: unset;
+    color: white;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.left{
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    border-right: 4px solid white;
+}
+.right{
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    border-left: 4px solid white;
+}
+.nav-wrapper{
+    position:fixed;
+    top:0;
+    left:0;
+    width:20%;
+    height:100vh;
+    background:#313131;
+    overflow: auto;
+    box-sizing: border-box;
+    background-size:cover;
+    background-position: left;
+}
+.cont{
+    width:100%;
+    clear: both;
+    padding:5px 10px;
+    box-sizing: border-box;
+}
+.cont a{
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-weight:500;
+    color:white;
+    padding: 10px 5px;
+    text-align: left;
+}
+.cont a:hover{
+    background: rgba(236, 236, 236, 0.3);
+    color: white;
+}
+.headmenu{
+    text-align:center;
+    height: 50px;
+    font-size: 1.5em;
+    padding:0 10px;
+    color: white;
+    line-height: 50px;
+}
+.container{
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contents{
+    background:rgb(252, 252, 250);
+    border-radius: 10px;
+}
+.col-1{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.col-2{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.col-3{
+    width: 33.3%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.col-4{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.col-5{
+    width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.col-2-3{
+    width: 66.6%;
+    box-sizing: border-box;
+    padding: 10px;
+    word-break: break-all;
+}
+.col-2-4{
+    width: 75%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.col-2-5{
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.col-3-5{
+    width: 60%;
+    box-sizing: border-box;
+    padding: 10px
+}
+.col-4-5{
+    width: 40%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.info{
+    background:rgba(0, 0, 0, 0.5);
+    width:100%;
+    height:100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;  
+    padding:10px;
+    z-index: 30;
+}
+.content-info{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+    padding: 1%;
+}
+.input{
+    all: unset;
+    width: 100%;
+    height: 40px;
+    border:2px solid black;
+    font-size: 1.5em;
+    font-weight: 1.5em;
+    text-align: center;
+    box-sizing: border-box;
+}
+.button{
+    all: unset;
+    font-size:1.5em;
+    font-weight: 1.5em;
+    color:white;
+    text-align:center;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+}
+.btn{
+    padding:0;
+    color:white;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+    line-height: 1.1em;
+    display: none;
+    z-index: 100;
+    line-height: 54px;
+}
+.btnlink{
+    all: unset;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 10px 0;
+    cursor: pointer;
+    width:50%;
+    float: left;
+    box-sizing: border-box;
+    border:1px solid transparent;
+}
+.btnlink1{
+    all: unset;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width:10%;
+    padding: 5px 0; 
+    display: inline-block;
+    border:1px solid transparent;
+}
+.btnlink:hover,.btnlink1:hover{
+    border-radius:50%;
+    background:rgb(216, 216, 216);
+}
+.lbl{
+    position: relative;
+    cursor: pointer;
+}
+.lbl input{
+    display: none;
+}
+.lbl span{
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 18%;
+    border:2px solid black;
+    color: black;
+    font-size: 1.2em;
+	height:40px;
+    line-height:34px;
+    float: left;
+    text-align: center;
+}
+.lbl input:checked ~ span{
+    background: black;
+    border: 2px solid black;
+    color: white;
+}
+.lbl .spn{
+    margin:1%;
+    box-sizing: border-box;
+    padding:20px 15px;
+    height:auto;
+    border:unset;
+}
+.lbl input:checked ~ .spn{
+    background:rgb(255, 187, 0);
+    border:unset;
+    border-radius: 10px;
+}
+input[type="file"]{
+    width:100%;
+    height: 40px;
+    font-size: 1.5em;
+    border:2px solid black;
+    color: black;
+    text-align: center;
+}
+::-webkit-file-upload-button {
+    all: unset;
+    background: black;
+    color: white;
+    width: 50%;
+    padding: 4px 0;
+    text-align: center;
+}
+.select {
+    all: unset;
+    width: 100%;
+    height: 40px;
+    border:2px solid black;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 1.5em;
+    text-align: center;
+    box-sizing: border-box;
+    text-align-last:center;
+    color: black;
+}
+.slideshow-container {
+    width:100%;
+    height:400px;
+    position: relative;
+    margin: auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#000000;
+}
+.slideshow-container .mySlides img{
+    max-height:400px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+@media only screen and (max-width: 800px) {
+    .col-1,.col-2,.col-2-3,.col-2-4,.col-2-5,.col-3,.col-3-5,.col-4,.col-4-5,.col-5{
+        width: 100%;
+        display: block;
+    }
+    .lbl span{
+        width:100%;
+    }
+    .lbl .spn{
+        width:48%
+    }
+    .lbl .spn1{
+        margin: 1% 26%;
+    }
+    .nav-wrapper{
+        width:calc(100% - 50px);
+        z-index: 100;
+        display: none;
+    }
+    .btn{
+        display: block;
+    }
+    .slideshow-container{
+        height: 200px;
+    }
+    .slideshow-container .mySlides img{
+        max-height:200px;
+    }
+    #nav{
+        padding:0
+    }
+}
