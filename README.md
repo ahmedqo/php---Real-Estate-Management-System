@@ -1,2 +1,2 @@
 # php---Real-Estate-Management-System
-a web application for management of real estate agency 
+a web application to manage a real estate agency 
